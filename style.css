@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+  background-color: #0062cc;
+}
+
+.navbar{
+   background-color: rgb(30 215 96);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  position: sticky;
+  top: 0;
+}
+
+.navbar .navbar-brand{
+    font-size: x-large;
+    font-weight: 800;
+    left:0;
+}
+.navbar-nav li {
+  transition: all 0.3s ease;
+}
+
+.navbar-nav li:hover {
+  transform: translateY(-5px);
+  text-decoration:underline grey solid 5px ;
+ 
+}
+
+.section-1{
+  
+  margin: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-image: linear-gradient(-90deg,rgb(121, 199, 230),lightgreen);
+}   
+
+.message{
+ padding-top: 20px;
+ align-items: center;
+ display: flex;
+ justify-content: center; /* add this line */
+ text-align: center; 
+ color: #f1f1f1;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.tagline{
+  font-weight:900;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 60px;
+  white-space: nowrap;
+  margin: 0 auto;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  letter-spacing: 0.15rem; /* Add a cursor effect */
+  animation: typing 3.5s steps(40),
+    blink-caret .75s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  to{
+    width:40%
+  }
+  from{
+    width:0%
+  }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(251, 255, 0); }
+}
+
+.message{
+    font-size: 1.2rem;
+    color: #333;
+}
+#navbarSupportedContent{
+   
+    padding-left: 10px;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin: 20px;
+    background-color: #cac2c2;
+    font-family: 'Mukta', sans-serif;
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  .img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+  }
+  
+  .text {
+    flex: 1;
+    padding: 30px;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #030303;
+    opacity: 0.95;
+    animation: fadeIn 2s ease-in-out infinite;
+
+  }
+
+  .section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin: 20px;
+    background-image: linear-gradient(140deg,aqua,salmon);
+    font-family: 'Mukta', sans-serif;
+  }
+
+  .img-1{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+  }
+
+.form {
+    max-width: 500px;
+    margin: 100px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 30px -10px rgb(38, 57, 77);
+    z-index: 1;
+    transition: width 2s;
+    background-color: lightgrey;
+  }
+  
+  .form h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    background-color: #e6e6e6;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0062cc;
+  }
